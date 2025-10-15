@@ -2,7 +2,6 @@
 #define MYCPPLIB_H
 #include <cmath>
 
-
 class Mandel{
  public:
   Mandel(double re1=-2.1, double re2=0.6, double im1=-1.5, double im2=1.5);
@@ -38,8 +37,9 @@ class Mandel{
   double _re1, _re2, _im1, _im2;
   int _nTrials;
   int _nr, _ni;
-  double *_img;  // image buffer
+  double *_img;
 };
 
-  
+long long count3d_cpp(int n);
+
 #endif // block to ensure header is only compiled once
