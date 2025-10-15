@@ -41,5 +41,12 @@ class Mandel{
 };
 
 long long count3d_cpp(int n);
+#ifdef __cplusplus
+extern "C" {
+#endif
+long long count3d_c(int n);
+#ifdef __cplusplus
+}
+#endif
 
 #endif // block to ensure header is only compiled once

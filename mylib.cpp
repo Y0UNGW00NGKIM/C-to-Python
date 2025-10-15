@@ -95,6 +95,15 @@ extern "C" double HSVolume(int d, long long N, double r, unsigned long long seed
   return cubeV * (static_cast<double>(hits) / static_cast<double>(N));
 }
 
+extern "C" long long count3d_c(int n) {
+  long long cnt = 0;
+  for (int i = 0; i < n; ++i)
+    for (int j = i + 1; j < n; ++j)
+      for (int k = j + 1; k < n; ++k)
+        ++cnt;
+  return cnt;
+}
+
 /*
 int main(){
   findPi();

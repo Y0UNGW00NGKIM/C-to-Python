@@ -20,6 +20,7 @@ void mandel(double *img, double re1, double re2, double im1, double im2,
 extern "C" {
 #endif
 double HSVolume(int d, long long N, double r, unsigned long long seed);
+long long count3d_c(int n);
 #ifdef __cplusplus
 }
 #endif

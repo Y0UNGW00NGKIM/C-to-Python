@@ -73,3 +73,4 @@ long long count3d_cpp(int n) {
   return count;
 }
 
+extern "C" long long count3d_c(int n) { return count3d_cpp(n); }
